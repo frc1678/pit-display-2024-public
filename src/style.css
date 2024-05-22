@@ -1,0 +1,217 @@
+html {
+    font-family: "Inter", "system-ui";
+}
+
+@supports (font-variation-settings: normal) {
+    html {
+        font-family: "Inter var", "system-ui";
+    }
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: auto;
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+}
+
+h1 {
+    color: #40d635;
+    font-family: "Bebas Neue";
+    text-align: center;
+    font-size: 100px;
+    font-weight: normal;
+    letter-spacing: 0.003em;
+    margin-top: 2em;
+    user-select: none;
+}
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("/public/fonts/BebasNeue-Regular.otf") format("opentype");
+    font-weight: normal;
+    text-align: center;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("/public/fonts/FreeSans.otf") format("opentype");
+}
+h2 {
+    color: black;
+    font-size: 63.5px;
+    font-family: "Bebas Neue";
+    font-weight: normal;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: -0.5em;
+    letter-spacing: 0.03em;
+    user-select: none;
+}
+
+h3 {
+    color: #40d635;
+    font-size: 35px;
+    font-family: "Bebas Neue";
+    font-weight: normal;
+    margin-top: 0.5em;
+    margin-bottom: -0.1em;
+    letter-spacing: 0.03em;
+    user-select: none;
+}
+
+h4 {
+    margin-left: 70px;
+    margin-right: 70px;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    user-select: none;
+}
+h5 {
+    font-family: "Helvetica Neue";
+    user-select: none;
+}
+p {
+    font-family: Helvetica;
+    padding: 10px;
+    font-size: 20px;
+    line-height: 1.5em;
+    margin-right: 100px;
+    margin-left: 100px;
+    font-family: "Helvetica Neue";
+    user-select: none;
+}
+hr.header {
+    border-top: 0.1em solid;
+    width: 50em;
+    margin-bottom: 3.5em;
+}
+
+hr.divider {
+    border-top: 0.1em solid;
+    width: 50em;
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+hr.scoring {
+    border-top: 0.1em solid;
+    width: 15em;
+    margin-bottom: -0.75em;
+}
+
+hr.drivetrain {
+    border-top: 0.1em solid;
+    width: 21em;
+    margin-bottom: -0.75em;
+}
+
+hr.operating-interface {
+    border-top: 0.1em solid;
+    width: 40em;
+    margin-bottom: -0.75em;
+}
+
+hr.electrical {
+    border-top: 0.1em solid;
+    width: 21em;
+    margin-bottom: -0.75em;
+}
+
+hr.achievements {
+    border-top: 0.1em solid;
+    width: 27.5em;
+    margin-bottom: -0.75em;
+}
+hr.pyramid {
+    border-top: 0.1em solid;
+    width: 56em;
+    margin-bottom: -0.75em;
+}
+hr.ball {
+    border-top: 0.1em solid;
+    width: 43.5em;
+    margin-bottom: -0.75em;
+}
+hr.arm {
+    border-top: 0.1em solid;
+    width: 7.75em;
+    margin-bottom: -0.75em;
+}
+hr.intake {
+    border-top: 0.1em solid;
+    width: 12.5em;
+    margin-bottom: -0.75em;
+}
+hr.solid {
+    border-top: 0.05em solid;
+    width: 12em;
+    margin-bottom: -0.75em;
+}
+hr.c-tiny {
+    border-top: 0.1em solid;
+    width: 23.5em;
+    margin-bottom: -0.75em;
+}
+hr.c-teeny {
+    border-top: 0.1em solid;
+    width: 26.5em;
+    margin-bottom: -0.75em;
+}
+hr.divider-home {
+    border-top: 0.1em solid;
+    width: 45em;
+    margin-top: -7em;
+    margin-bottom: -7em;
+}
+
+
+.logos {
+    border-top: 0.1em solid;
+    margin-left: 24em;
+    margin-bottom: 10px;
+    margin-top: 5em;
+    user-select: none;
+}
+
+.captions {
+    margin-top: -2em;
+    margin-bottom: 4em;
+    text-align: center;
+    font-family: "Helvetica Neue";
+    font-size: x-large;
+
+}
+
+button.return {
+    height: 12vw;
+    width: 12vw;
+    flex-shrink: 0;
+    background-image: url("/images/pit_display_buttons_and_graphics/return-button.png");
+    background-position: center;
+    background-size: cover;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: transform 0.06s;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 28px;
+    font-weight: bold;
+    overflow-wrap: break-word;
+}
+
+button.return:active {
+    transform: scale(1.1);
+}

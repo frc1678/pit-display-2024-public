@@ -1,0 +1,44 @@
+{
+    "name": "pit-display-vue",
+    "version": "1.0.0",
+    "main": "dist-electron/main/index.js",
+    "description": "Pit display app for FRC team 1678.",
+    "author": "FRC Team 1678",
+    "license": "MIT",
+    "private": true,
+    "keywords": [
+        "electron",
+        "rollup",
+        "vite",
+        "vue3",
+        "vue"
+    ],
+    "debug": {
+        "env": {
+            "VITE_DEV_SERVER_URL": "http://127.0.0.1:3344/"
+        }
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "vue-tsc --noEmit && vite build && electron-builder",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^4.3.3",
+        "electron": "^26.0.0",
+        "electron-builder": "^24.6.3",
+        "tree-kill": "^1.2.2",
+        "typescript": "^5.1.6",
+        "vite": "^4.5.1",
+        "vite-plugin-electron": "^0.15.3",
+        "vite-plugin-electron-renderer": "^0.14.5",
+        "vue": "^3.3.9",
+        "vue-tsc": "^1.8.8"
+    },
+    "dependencies": {
+        "@google/model-viewer": "^3.3.0",
+        "inter-ui": "^3.19.3",
+        "three": "^0.160.1",
+        "vue-router": "^4.2.5"
+    }
+}
